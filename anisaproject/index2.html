@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <a href="index1.html" id="homeIcon" title="Kthehu në Home"><img src="Untitled_design-removebg-preview (1).png" alt="" width="150px" height="150px"></a>
+
+    <div class="container">
+        
+
+        <div class="booking-form">
+            <h2>Reservation</h2>
+            <form id="bookingForm">
+                <label for="date">Date*</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time*</label>
+                <select id="time" name="time" required>
+                    <option value="">Select Time</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                </select>
+
+                <label for="people">People*</label>
+                <select id="people" name="people" required>
+                    <option value="">Select People</option>
+                    <option value="1">1 person</option>
+                    <option value="2">2 persons</option>
+                    <option value="3">3 persons</option>
+                    <option value="4">4 persons</option>
+                </select>
+
+                <label for="first-name">First name*</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone*</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="comments">Comments (optional)</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <div class="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe me to the newsletter</label>
+                </div>
+
+                <button type="button" class="book-button" onclick="validateForm()">Book a table</button>
+            </form>
+        </div>
+
+       
+</div>
+    
+
+    <div class="booking-image">
+        <img src="the-delicious-burger-in-the-black-background-with-ai-generated-free-photo-removebg-preview.png" alt="Burger Image">
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
